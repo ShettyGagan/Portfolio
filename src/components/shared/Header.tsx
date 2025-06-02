@@ -1,15 +1,23 @@
+// src/components/shared/Header.tsx
+"use client"; // Required for usePathname
+
 import Link from 'next/link';
 import { CodeXml } from 'lucide-react';
+import { usePathname } from 'next/navigation';
+import { cn } from '@/lib/utils';
 
 const navItems = [
-  { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Blog', href: '#blog' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Skills', href: '/skills' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="bg-background/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,13 +31,17 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="font-headline text-foreground hover:text-primary transition-colors text-lg"
+                className={cn(
+                  "font-headline text-foreground hover:text-primary transition-colors text-lg pb-1",
+                  pathname === item.href ? "text-primary font-semibold border-b-2 border-primary" : "border-b-2 border-transparent"
+                )}
               >
                 {item.name}
               </Link>
             ))}
           </nav>
-          {/* Mobile menu button can be added here if needed */}
+          {/* Mobile menu button can be added here */}
+          {/* Example: <Sheet><SheetTrigger asChild><Button variant="ghost" size="icon" className="md:hidden"><Menu /></Button></SheetTrigger><SheetContent>...</SheetContent></Sheet> */}
         </div>
       </div>
     </header>

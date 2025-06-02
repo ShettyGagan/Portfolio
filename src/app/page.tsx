@@ -1,19 +1,16 @@
 import HeroSection from "@/components/sections/HeroSection";
-import AboutMeSection from "@/components/sections/AboutMeSection";
-import ProjectsSection from "@/components/sections/ProjectsSection";
-import SkillsSection from "@/components/sections/SkillsSection";
-import BlogSection from "@/components/sections/BlogSection";
-import ContactSection from "@/components/sections/ContactSection";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home | Portfolio Pro',
+  description: 'Welcome to my personal portfolio website. Discover my projects, skills, and blog.',
+};
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <AboutMeSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <BlogSection />
-      <ContactSection />
+      {/* You can add other introductory content or calls to action here if desired */}
     </>
   );
 }
