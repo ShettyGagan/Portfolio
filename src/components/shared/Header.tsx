@@ -14,7 +14,7 @@ const navItems = [
   { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
   { name: 'Skills', href: '/skills' },
-  { name: 'Blog', href: 'https://medium.com/@keerthank2005/in-todays-fast-paced-world-where-change-is-constant-and-challenges-are-plenty-it-becomes-fe96ae211271' },
+  { name: 'UHV Blog', href: 'https://medium.com/@keerthank2005/in-todays-fast-paced-world-where-change-is-constant-and-challenges-are-plenty-it-becomes-fe96ae211271' },
   { name: 'Contact', href: '/contact' },
 ];
 
