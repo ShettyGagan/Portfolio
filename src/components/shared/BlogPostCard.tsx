@@ -20,29 +20,30 @@ interface BlogPostCardProps {
 
 export default function BlogPostCard({ post }: BlogPostCardProps) {
   return (
-    <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+    <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out flex flex-col h-full group transform hover:-translate-y-1">
       <CardHeader className="p-0">
-        <div className="relative w-full h-48">
+        <div className="relative w-full h-48 overflow-hidden">
           <Image
             src={post.imageUrl}
             alt={post.title}
             layout="fill"
             objectFit="cover"
+            className="transform transition-transform duration-500 group-hover:scale-105"
             data-ai-hint={post.imageHint || "blog article"}
           />
         </div>
       </CardHeader>
       <CardContent className="p-6 flex-grow">
-        <CardTitle className="font-headline text-xl mb-2 text-primary">{post.title}</CardTitle>
+        <CardTitle className="font-headline text-xl mb-2 text-primary group-hover:text-accent transition-colors duration-300">{post.title}</CardTitle>
         <p className="text-xs text-muted-foreground mb-2">{post.date}</p>
         <CardDescription className="text-muted-foreground text-sm mb-4 h-24 overflow-y-auto">
           {post.snippet}
         </CardDescription>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button asChild variant="link" className="text-accent p-0 hover:text-accent/90">
+        <Button asChild variant="link" className="text-accent p-0 hover:text-accent/80 transition-colors duration-300 group">
           <Link href={post.link} target="_blank" rel="noopener noreferrer">
-            Read More <ArrowRight className="ml-2 h-4 w-4" />
+            Read More <ArrowRight className="ml-2 h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </Button>
       </CardFooter>

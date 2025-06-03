@@ -10,24 +10,7 @@ const blogPostsData: BlogPost[] = [
     imageHint: 'code editor',
     link: '#', // Replace with actual link
   },
-  {
-    id: '2',
-    title: 'Mastering Tailwind CSS for Rapid UI Development',
-    date: 'November 15, 2023',
-    snippet: 'Learn how to leverage the power of Tailwind CSS to build beautiful, responsive user interfaces quickly. This post covers utility-first concepts, customization, and best practices.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'website design',
-    link: '#', // Replace with actual link
-  },
-  {
-    id: '3',
-    title: 'The Rise of Generative AI in Web Development',
-    date: 'December 05, 2023',
-    snippet: 'Exploring the impact of Generative AI tools like Genkit on the web development workflow. From code generation to content creation, AI is transforming how we build.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'artificial intelligence',
-    link: '#', // Replace with actual link
-  },
+  
 ];
 
 export default function BlogSection() {

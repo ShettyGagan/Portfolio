@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ProfileWriterForm from "@/components/ai/ProfileWriterForm";
 
 export default function AboutMeSection() {
   const currentIntro = "Hello! I'm a passionate developer specializing in creating modern web applications.";
@@ -13,12 +12,12 @@ When I'm not coding, you can find me exploring new hiking trails or experimentin
         <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary text-center mb-12">
           About Me
         </h2>
-        <div className="grid md:grid-cols-5 gap-12 items-start">
+        <div className="grid md:grid-cols-5 gap-12 items-center"> {/* Changed items-start to items-center */}
           <div className="md:col-span-2 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden shadow-xl transform transition-transform hover:scale-105">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
               <Image
-                src="https://placehold.co/400x400.png"
-                alt="Profile Picture"
+                src="/1714299739440.jpg"
+                alt="Profile Picture - Gagan Shetty"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-lg"
@@ -34,13 +33,6 @@ When I'm not coding, you can find me exploring new hiking trails or experimentin
               {currentDescription}
             </p>
           </div>
-        </div>
-        
-        <div className="mt-16 md:mt-24">
-          <ProfileWriterForm 
-            initialIntro={currentIntro}
-            initialDescription={currentDescription} 
-          />
         </div>
       </div>
     </section>

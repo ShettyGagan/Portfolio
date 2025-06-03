@@ -2,7 +2,7 @@ import { Github, Linkedin, Twitter } from 'lucide-react';
 import Link from 'next/link';
 
 const socialLinks = [
-  { name: 'GitHub', icon: Github, url: 'https://github.com/yourusername' },
+  { name: 'GitHub', icon: Github, url: 'https://github.com/ShettyGagan' },
   { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/yourusername' },
   { name: 'Twitter', icon: Twitter, url: 'https://twitter.com/yourusername' },
 ];
@@ -20,7 +20,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+          &copy; {new Date().getFullYear()} Gagan Shetty. All rights reserved.
         </p>
         <p className="text-xs text-muted-foreground mt-1">
           Built with Next.js and Tailwind CSS.

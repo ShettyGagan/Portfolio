@@ -4,23 +4,16 @@ import { Code, Database, Server, Smartphone, Cog, Cpu, Bot } from 'lucide-react'
 const skillsData = [
   { name: 'React', Icon: Code },
   { name: 'Next.js', Icon: Code },
-  { name: 'Node.js', Icon: Server },
   { name: 'Python', Icon: Code },
   { name: 'JavaScript', Icon: Code },
-  { name: 'TypeScript', Icon: Code },
   { name: 'HTML5', Icon: Code },
   { name: 'CSS3', Icon: Code },
-  { name: 'Tailwind CSS', Icon: Code },
   { name: 'SQL Databases', Icon: Database },
   { name: 'NoSQL (MongoDB)', Icon: Database },
   { name: 'REST APIs', Icon: Cog },
-  { name: 'GraphQL', Icon: Cog },
   { name: 'Docker', Icon: Cog },
   { name: 'Git & GitHub', Icon: Cog },
   { name: 'GenAI / LLMs', Icon: Bot },
-  { name: 'Firebase', Icon: Server },
-  { name: 'Mobile Development', Icon: Smartphone },
-  { name: 'System Design', Icon: Cpu }
 ];
 
 export default function SkillsSection() {
