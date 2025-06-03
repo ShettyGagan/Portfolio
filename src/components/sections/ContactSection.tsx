@@ -26,7 +26,7 @@ const socialLinks = [
   { name: 'GitHub', icon: Github, url: 'https://github.com/ShettyGagan' },
   { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/gagan-shetty-679144293' }, // Corrected URL
   { name: 'Twitter', icon: Twitter, url: 'https://twitter.com/yourusername' }, // Replace with actual
-  { name: 'Email', icon: Mail, url: 'mailto:youremail@example.com' }, // Replace with actual
+  { name: 'Email', icon: Mail, url: 'mailto:gaganshetty2222@gmail.com' }, // Replace with actual
 ];
 
 export default function ContactSection() {

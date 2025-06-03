@@ -14,7 +14,7 @@ const navItems = [
   { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
   { name: 'Skills', href: '/skills' },
-  { name: 'Blog', href: '/blog' },
+  { name: 'Blog', href: 'https://medium.com/@keerthank2005/in-todays-fast-paced-world-where-change-is-constant-and-challenges-are-plenty-it-becomes-fe96ae211271' },
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -28,7 +28,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 text-primary hover:text-accent transition-colors duration-300">
             <CodeXml className="h-8 w-8 transform transition-transform duration-300 hover:rotate-12" />
-            <span className="font-headline text-2xl font-semibold">Portfolio Pro</span>
+            <span className="font-headline text-2xl font-semibold">Gagan Shetty </span>
           </Link>
           
           {/* Desktop Navigation */}

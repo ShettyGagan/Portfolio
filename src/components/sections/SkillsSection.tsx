@@ -3,7 +3,6 @@ import { Code, Database, Server, Smartphone, Cog, Cpu, Bot } from 'lucide-react'
 
 const skillsData = [
   { name: 'React', Icon: Code },
-  { name: 'Next.js', Icon: Code },
   { name: 'Python', Icon: Code },
   { name: 'JavaScript', Icon: Code },
   { name: 'HTML5', Icon: Code },
@@ -12,7 +11,6 @@ const skillsData = [
   { name: 'NoSQL (MongoDB)', Icon: Database },
   { name: 'REST APIs', Icon: Cog },
   { name: 'Docker', Icon: Cog },
-  { name: 'Git & GitHub', Icon: Cog },
   { name: 'GenAI / LLMs', Icon: Bot },
 ];
 
