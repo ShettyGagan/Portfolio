@@ -31,7 +31,7 @@ export default function Header() {
             <span className="font-headline text-2xl font-semibold">Gagan Shetty </span>
           </Link>
           
-          {/* Desktop Navigation */}
+          {/* Deskto Navigation */}
           <nav className="hidden md:flex space-x-1">
             {navItems.map((item) => (
               <Link
